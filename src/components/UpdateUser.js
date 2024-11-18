@@ -14,19 +14,20 @@ const UpdateUser = () => {
 
     useEffect(()=>{
         const fetchUserDetailsById = ()=>{
-            try{
-                axios.get('https://my-json-server.typicode.com/Sandeep-1405/User-Management/users/'+id)
-                .then(res=>{
-                    console.log(res)
-                    setFirstName(res.data.firstName)
-                    setLastName(res.data.lastName)
-                    setEmail(res.data.email)
-                    setDepartment(res.data.department)
-                })
-                .catch(error=>console.log(error))
-            }catch(err){
-                console.log(err)
-            }
+            
+            axios.get('https://my-json-server.typicode.com/Sandeep-1405/User-Management/users/'+id)
+            .then(res=>{
+                console.log(res)
+                setFirstName(res.data.firstName)
+                setLastName(res.data.lastName)
+                setEmail(res.data.email)
+                setDepartment(res.data.department)
+            })
+            .catch(error=>{
+                console.log(error)
+                alert(error.message)
+            })
+            
         }
         fetchUserDetailsById();
     },[])
@@ -39,7 +40,10 @@ const UpdateUser = () => {
             console.log(res)
             navigate('/')
         })
-        .catch(error=> console.log(error))
+        .catch(error=>{
+            console.log(error)
+            alert(error.message)
+        })
 
     };
 

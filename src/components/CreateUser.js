@@ -18,7 +18,10 @@ const CreateUser = () => {
             console.log(res)
             navigate('/')
         })
-        .catch(error=> console.log(error))
+        .catch(error=>{
+            console.log(error)
+            alert(error.message)
+        })
 
     };
 

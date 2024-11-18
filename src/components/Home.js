@@ -16,10 +16,27 @@ const Home = () => {
                 })
                 .catch(error => {
                     console.error(error);
+                    alert(error.message)
                 });
         };
         fetchUsers();
     }, []);
+
+    //Function to delete the user
+    const onClickDelete = (id) =>{
+        //console.log(id);
+        
+        axios.delete(`https://my-json-server.typicode.com/Sandeep-1405/User-Management/users/${id}`)
+        .then(res=>{
+            console.log(res)
+            //window.location.reload();
+        })
+        .catch(error=>{
+            console.log(error)
+            alert(error.message)
+        })
+        
+    }
 
     // Function to display when no data is found
     const emptyList = () => (
@@ -53,7 +70,7 @@ const Home = () => {
                                 <td>{user.department}</td>
                                 <td className="d-flex">
                                     <Link to={`/user/update/${user.id}`} className="btn btn-warning btn-sm me-2">Update</Link>
-                                    <button className="btn btn-danger btn-sm">Delete</button>
+                                    <button className="btn btn-danger btn-sm" onClick={()=>onClickDelete(user.id)}>Delete</button>
                                 </td>
                             </tr>
                         ))}
