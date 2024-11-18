@@ -2,17 +2,26 @@
     "users":[
         {
             "id":1,
-            "name":"Sandeep"
+            "firstName":"Sandeep",
+            "lastName":"Maraboina",
+            "email":"sandeep@gmail.com",
+            "department": "Development"
         },
         {
             "id":2,
-            "name":"Nihaan"
+            "firstName":"Nihaan",
+            "lastName":"Sootrapu",
+            "email":"nihaan@gmail.com",
+            "department": "Testing"
         },
         {
-            "id":2,
-            "name":"Ridhaan"
+            "id":3,
+            "firstName":"Ridhaan",
+            "lastName":"Jinukala",
+            "email":"ridhaan@gmail.com",
+            "department": "Cloud"
         }
     ]
 
-    
+
 }
