@@ -52,7 +52,7 @@ const Home = () => {
                                 <td>{user.email}</td>
                                 <td>{user.department}</td>
                                 <td className="d-flex">
-                                    <button className="btn btn-warning btn-sm me-2">Update</button>
+                                    <Link to={`/user/update/${user.id}`} className="btn btn-warning btn-sm me-2">Update</Link>
                                     <button className="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>

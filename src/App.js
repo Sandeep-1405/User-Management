@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' Component={Home} />
         <Route path='/user/create' Component={CreateUser} />
-        <Route path='/update/:id' Component={UpdateUser} />
+        <Route path='/user/update/:id' Component={UpdateUser} />
       </Routes>
     </BrowserRouter>
   );

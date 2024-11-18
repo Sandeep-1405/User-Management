@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const CreateUser = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [department, setDepartment] = useState('');
+    const navigate = useNavigate();
 
     // Function to handle form submission
     const handleSubmit = (e) => {
@@ -14,14 +16,10 @@ const CreateUser = () => {
         axios.post('https://my-json-server.typicode.com/Sandeep-1405/User-Management/users',{firstName,lastName,email,department})
         .then(res=>{
             console.log(res)
+            navigate('/')
         })
         .catch(error=> console.log(error))
 
-        // Clear form after submission
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setDepartment('');
     };
 
     return (
@@ -85,10 +83,14 @@ const CreateUser = () => {
                     />
                 </div>
 
-                \
-                <button type="submit" className="btn btn-primary w-100">
-                    Create User
-                </button>
+                <div className='d-flex justify-content-center'>
+                    <button type="submit" className="btn btn-primary w-25 me-3">
+                        Create User
+                    </button>
+                    <button className="btn btn-secondary w-25" onClick={()=>navigate('/')}>
+                        Back
+                    </button>
+                </div>
             </form>
         </div>
     );
