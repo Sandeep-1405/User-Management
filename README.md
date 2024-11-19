@@ -1,55 +1,64 @@
-#User Management Web Application
-###A simple web application to manage user details by interacting with the JSONPlaceholder API. The app demonstrates viewing, adding, editing, and deleting users with a mock backend.
+# User Management Web Application
+**A simple web application to manage user details by interacting with the JSONPlaceholder API. The app demonstrates viewing, adding, editing, and deleting users with a mock backend.**
 
-##Features
-View Users: Fetch and display all users with details like ID, First Name, Last Name, Email, and Department.
-Add User: Simulate adding a new user.
-Edit User: Simulate editing existing user details.
-Delete User: Simulate deleting a user.
-Error Handling: Gracefully handle API request failures with user-friendly messages.
+## Features
 
-##Getting Started
-###Prerequisites
-Node.js (v16 or later)
-npm (bundled with Node.js) 
+- **View Users:** Fetch and display all users with details like ID, First Name, Last Name, Email, and Department. <br>
+- **Add User:** Simulate adding a new user. <br>
+- **Edit User:** Simulate editing existing user details. <br>
+- **Delete User:** Simulate deleting a user. <br>
+- **Error Handling:** Gracefully handle API request failures with user-friendly messages. <br>
 
-##Setup Instructions
-1. Clone the repository:
-  ` git clone (https://github.com/Sandeep-1405/User-Management)`
-  `cd <repository_directory>`
+## Getting Started
+### Prerequisites
+- **Node.js (v16 or later)**  <br>
+- **npm (bundled with Node.js)**  <br>
 
-2. Install dependencies:
-     `npm install`
+## Setup Instructions
+
+1. **Clone the repository:**  <br>
+
+   - `git clone https://github.com/Sandeep-1405/User-Management`  <br>
+   - `cd <repository_directory>` <br>
+
+2. **Install dependencies:**  <br>
+
+   - `npm install`  <br>
    
-3. Start the development server:
-   `npm start`
-   
-4.Open your browser and navigate to:
-  `http://localhost:3000`
+3. **Start the development server:**  <br>
 
-##How to Use
+   - `npm start`  <br>
+   
+4. **Open your browser and navigate to:**  <br>
+
+    `http://localhost:3000`  <br>
+
+## How to Use 
 
 **View Users:**
-Users are listed on the homepage after fetching data from the /users endpoint.
+- Users are listed on the homepage after fetching data from the /users endpoint.<br>
 
 **Add User:**
-Click the "Add User" button.
-Fill out the form and submit to simulate adding a new user.
+- Click the "Add User" button.<br>
+- Fill out the form and submit to simulate adding a new user. <br>
 
 **Edit User:**
-Click the "Edit" button next to a user.
-Update the user details in the form and save changes.
+- Click the "Edit" button next to a user.<br>
+- Update the user details in the form and save changes.<br>
 
 **Delete User:**
-Click the "Delete" button next to a user and confirm the action.
+- Click the "Delete" button next to a user and confirm the action.<br>
 
-##Technologies Used
-**React.js**: Frontend framework
-**Axios**: For HTTP requests
-**JSONPlaceholder**: Mock backend API
-**Bootstrap**: For styling
+## Technologies Used
+**React.js**: Frontend framework. <br>
+**Axios**: For HTTP requests. <br>
+**JSONPlaceholder**: Mock backend API. <br>
+**Bootstrap**: For styling. <br>
 
-##Error Handling
-Displays error messages for failed API requests.
-Validates form inputs to ensure data integrity.
+## Error Handling
+- Displays error messages for failed API requests.
+- Validates form inputs to ensure data integrity.
+
+## My JSON Server URL: 
+- `https://my-json-server.typicode.com/Sandeep-1405/User-Management`
 
