@@ -49,6 +49,13 @@
 **Delete User:**
 - Click the "Delete" button next to a user and confirm the action.<br>
 
+## API Endpoints
+- **GET /users**: Fetch all users.
+- **POST /users**: Simulate adding a new user.
+- **PUT /users/:id**: Simulate updating user details.
+- **DELETE function call in Home Page**: Simulate deleting a user.
+
+
 ## Technologies Used
 **React.js**: Frontend framework. <br>
 **Axios**: For HTTP requests. <br>
