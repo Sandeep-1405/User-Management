@@ -31,7 +31,7 @@
    
 4. **Open your browser and navigate to:**  <br>
 
-    `http://localhost:3000`  <br>
+    - `http://localhost:3000`  <br>
 
 ## How to Use 
 
