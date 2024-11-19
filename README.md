@@ -67,7 +67,7 @@
 - Validates form inputs to ensure data integrity.
 
 ## Live Demo
-Visit the deployed app: <br> [User Management App](https://user-management-omega-smoky.vercel.app/))
+Visit the deployed app: [User Management App](https://user-management-omega-smoky.vercel.app/))
 
 
 ## My JSON Server URL: 
